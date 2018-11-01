@@ -1,0 +1,318 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Home</title>
+		<link rel="icon" type="image/x-icon" href="./favicon.ico" />
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<script src="js/jquery.min.js"></script>
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+
+   		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+
+
+	</head>
+	<body>
+		    <!----- header---->
+			<div id="home" class="header">
+					<div class="top-header">
+						<div class="container">
+						<div class="logo">
+							<a href="#">任其然</a>
+						</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">Home </a></li>
+								<li class="page-scroll"><a href="#work" class="scroll">Works</a></li>
+								<li class="page-scroll"><a href="#skills" class="scroll">Team Skills</a></li>
+								<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">Contact</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!----- //header---->
+
+
+			<!----banner---->
+			<div class="banner text-center">
+				<div class="container">
+					<div class="banner-info">
+						<h1><span>欢迎来到我的个人主页</span></h1>
+						<p>Specialize in crafting awesome ideas for web, mobile and beyond.</p>
+						<label class="page-scroll"><a class="big-btn scroll" href="#work1"><span> </span></a></label>
+					</div>
+				</div>
+			</div>
+			<!--//banner---->
+
+
+			<!---work--->
+			<div id="work" class="work">
+				<div id="work1" class="container">
+					<div class="head-one text-center">
+						<h2>Works</h2>
+						<span> </span>
+						<p>这里可以看到我一些个人作品</p>
+					</div>
+					<!---works--->
+
+					<!---images-hover-effects--->
+					<script src="js/jquery.hoverGrid.js"></script>
+					<link rel="stylesheet" type="text/css" href="css/jquery.hoverGrid.css">
+
+					<script type="text/javascript">
+					    $(document).ready(function() {
+					      $('#whatever').hoverGrid();
+					    });
+					</script>
+					<!---images-hover-effects--->
+
+
+					<div class="works">
+							<div id="whatever">
+								<div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/w1.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>QQ音乐</h2>
+								            <p>仿造QQ音乐用JQuery制作的一个播放器</p>
+								        </div>
+								    </div>  
+							    </div>  
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/w2.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>QQ音乐</h2>
+								            <p>仿造QQ音乐用JQuery制作的一个播放器</p>
+								        </div>
+								    </div>  
+							    </div>    
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/w3.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>小米商城</h2>
+								            <p>用Vue制作的仿小米商城</p>
+								        </div>
+								    </div>  
+							    </div>    
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/w4.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>京东商城</h2>
+								            <p>仿京东商城的首页</p>
+								        </div>
+								    </div>  
+							    </div>    
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/w5.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>京东商城</h2>
+								            <p>仿京东商城的首页</p>
+								        </div>
+								    </div>  
+							    </div>    
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/w6.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>美团</h2>
+								            <p>仿美团的首页</p>
+								        </div>
+								    </div>  
+							    </div>    
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/w7.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>Vue项目</h2>
+								            <p>用Vue制作的App</p>
+								        </div>
+								    </div>  
+							    </div>    
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/w8.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>梅兰商贸</h2>
+								            <p>这是一个最开始练习做的商贸的静态网页</p>
+								        </div>
+								    </div>  
+							    </div>    
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/w9.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>淘宝店铺</h2>
+								            <p>套用淘宝的模板做的页面</p>
+								        </div>
+								    </div>  
+							    </div>  
+							    <div class="clearfix"> </div>               
+							</div>
+					</div>
+					 <div class="clearfix"> </div>   
+					</div>
+				</div>
+			<!---//works--->
+
+            <!---skills--->
+            <div id="skills" class="skills">
+						<div class="container">
+							<div class="head-one text-center skills-head">
+								<h2>team Skills</h2>
+								<span> </span>
+								<p>对编程的兴趣让我不断前进</p>
+							</div>	
+							<!----skills-skills---->
+							<div class="skills-members">
+								<div class="col-md-3">
+									<div class="skills-member text-center">
+										<img class="t-pic" src="images/t1.jpg" title="name" />
+										<h3>专业技能</h3>
+										<span>前端技能：H5 CSS3 JavaScript webpack 等 </br>
+											工具使用：Git Wamp Npm Ps 等</br>
+											前端框架:  Vue  Jquery Boostrap</br>
+                                            熟练用过Ps Ai </br>
+											良好的英语读写能力,能够读懂技术文档 </span>
+
+									</div>
+								</div>
+                                <div class="col-md-3">
+                                    <div class="skills-member text-center">
+                                        <img class="t-pic" src="images/t2.jpg" title="name" />
+                                        <h3>心路历程</h3>
+                                        <span>
+                                            17年帮朋友制作淘宝页面的时候对前端技术产生了极大的兴趣，然后开始自学前端。
+                                            从最开始的H5 CSS3 然后JS，越学越发现这里面需要的技术知识真的太多太多，但是这反而更激起我
+                                            更大的兴趣，想要获得更多的前端技术知识。
+                                            后面接触到JQuery，然后Bootstrap，这一个库一个框架让我发现更多前端的乐趣，写代码还能这样有趣。
+                                            再到后面学习了Vue，然后Node.js和Git这个分布式版本控制系统，让我认识到前端的神奇。
+                                            未来的目标是更加深入熟悉Vue Node.js和Git，掌握ES6和TypeScript。
+                                        </span>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="skills-member text-center">
+                                        <img class="t-pic" src="images/t3.jpg" title="name" />
+                                        <h3>兴趣爱好</h3>
+										<span>掘金(https://juejin.im)</br>
+											良好的英语读写能力,能够读懂相关技术文档。</br>
+											喜欢看书，追求最新的技术。</br>
+											喜欢泡博客和github等技术网站。</br>
+											也热爱足球，二次元和游戏。</span>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="skills-member text-center">
+                                        <img class="t-pic" src="images/t4.jpg" title="name" />
+                                        <h3>其他</h3>
+                                        <span>  </span>
+
+                                    </div>
+                                </div>
+								<div class="clearfix"> </div>
+							</div>
+							<!----//skills-skills---->
+						</div>
+					</div>
+            <!---//skills--->
+
+            <!---Contact--->
+            <div id="contact" class="contact">
+						<div class="container">
+							<div class="head-one text-center">
+								<h2>contact</h2>
+								<span> </span>
+							</div>
+							<div class="contact-grids">
+
+								<div class="col-md-12 contact-form">
+								<p>QQ:438955580</p>
+								<p>E-mail:438955580@qq.com </p>
+                                <p>Mobile Phone:18623626670</p>
+
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+            <!---//Contact--->
+
+            <!---footer--->
+            <div class="footer">
+						<div class="container">
+							<div class="footer-left">
+
+							</div>
+							<div class="footer-right">
+								<p>Copyright &copy; <a href="#">任其然</a> </p>
+
+								<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+            <!---//footer--->
+				</div>
+			</div>
+
+</body>
+</html>
